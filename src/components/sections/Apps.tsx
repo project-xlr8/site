@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 import { MaskText } from "@/components/ui/Mask";
 
@@ -76,6 +77,26 @@ export default function Apps() {
               </li>
             ))}
           </ul>
+
+          {/* Legal */}
+          <div className="mt-10 flex flex-col gap-5 border-t hairline pt-8 sm:flex-row sm:items-center md:mt-12">
+            <div>
+              <span className="label">Legal</span>
+              <p className="mt-1.5 max-w-sm text-sm text-ink-soft">
+                Private &amp; offline-first — no data ever leaves your device.
+              </p>
+            </div>
+            <Link
+              href="/privacy"
+              className="liquid-glass group ml-auto inline-flex items-center gap-2.5 rounded-full px-5 py-3 text-base font-medium text-ink transition-colors hover:text-accent"
+            >
+              <span className="inline-block h-2 w-2 rounded-full bg-accent" />
+              Privacy Policy
+              <span className="serif-accent text-xl leading-none text-accent transition-transform group-hover:translate-x-0.5">
+                →
+              </span>
+            </Link>
+          </div>
         </article>
       </Reveal>
     </section>
