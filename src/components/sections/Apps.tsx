@@ -87,7 +87,7 @@ export default function Apps() {
               </p>
             </div>
             <Link
-              href="/privacy"
+              href="/until/privacy-policy"
               className="liquid-glass group ml-auto inline-flex items-center gap-2.5 rounded-full px-5 py-3 text-base font-medium text-ink transition-colors hover:text-accent"
             >
               <span className="inline-block h-2 w-2 rounded-full bg-accent" />

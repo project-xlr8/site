@@ -21,7 +21,7 @@ const cols: { title: string; links: FooterLink[] }[] = [
   },
   {
     title: "Legal",
-    links: [{ label: "Privacy Policy", href: "/privacy" }],
+    links: [{ label: "Privacy Policy", href: "/until/privacy-policy" }],
   },
 ];
 
@@ -66,7 +66,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-3 border-t hairline py-6 text-center sm:flex-row sm:text-left">
           <span className="label">© {new Date().getFullYear()} project-xlr8</span>
-          <Link href="/privacy" className="link-wipe label hover:text-ink">
+          <Link href="/until/privacy-policy" className="link-wipe label hover:text-ink">
             Privacy-first, by design
           </Link>
         </div>
